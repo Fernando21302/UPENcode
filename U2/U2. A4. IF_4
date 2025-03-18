@@ -1,0 +1,99 @@
+Algoritmo IF_4
+	Escribir 'Primer valor'
+	Leer valor_1
+	Escribir 'Segundo valor'
+	Leer valor_2
+	Escribir 'Tercer valor'
+	Leer valor_3
+	Escribir 'Cuarto valor'
+	Leer valor_4
+	
+	Si valor_1>valor_2 Y valor_1>valor_3 Y valor_1>valor_4 Entonces
+		mayor1 <- valor_1
+		SiNO si valor_1<valor_2 Y valor_1>valor_3 Y valor_1>valor_4 Entonces
+			mayor2 <- valor_1
+			SiNO si valor_1<valor_2 Y valor_1<valor_3 Y valor_1>valor_4 Entonces
+				menor2 <- valor_1
+				SiNO si valor_1<valor_2 Y valor_1<valor_3 Y valor_1<valor_4 Entonces
+					menor1 <- valor_1
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	Si valor_2>valor_1 Y valor_2>valor_3 Y valor_2>valor_4 Entonces
+		mayor1 <- valor_2
+	SiNO si valor_2<valor_1 Y valor_2>valor_3 Y valor_2>valor_4 Entonces
+			mayor2 <- valor_2
+		SiNO si valor_2<valor_1 Y valor_2<valor_3 Y valor_2>valor_4 Entonces
+				menor2 <- valor_2
+			SiNO si valor_2<valor_1 Y valor_2<valor_3 Y valor_2<valor_4 Entonces
+					menor1 <- valor_2
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	Si valor_3>valor_2 Y valor_3>valor_1 Y valor_3>valor_4 Entonces
+		mayor1 <- valor_3
+	    SiNO si valor_3<valor_2 Y valor_3>valor_1 Y valor_3>valor_4 Entonces
+			mayor2 <- valor_3
+			SiNO si valor_3<valor_2 Y valor_3<valor_1 Y valor_3>valor_4 Entonces
+				menor2 <- valor_3
+			    SiNO si valor_3<valor_2 Y valor_3<valor_1 Y valor_3<valor_4 Entonces
+					menor1 <- valor_3
+			    FinSi
+		    FinSi
+		FinSi
+	FinSi
+	
+	Si valor_4>valor_2 Y valor_4>valor_3 Y valor_4>valor_1 Entonces
+		mayor1 <- valor_4
+	SiNO si valor_4<valor_2 Y valor_4>valor_3 Y valor_4>valor_1 Entonces
+			mayor2 <- valor_4
+		SiNO si valor_4<valor_2 Y valor_4<valor_3 Y valor_4>valor_1 Entonces
+				menor2 <- valor_4
+			SiNO si valor_4<valor_2 Y valor_4<valor_3 Y valor_4<valor_1 Entonces
+					menor1 <- valor_4
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	resultado1 = valor_4 - valor_1
+	resultado2 = valor_2 - valor_1
+	resultado3 = valor_4 - valor_3
+	resultado4 = valor_3 - valor_2
+	resultadototal = valor_1 + valor_2 + valor_3 + valor_4
+	
+	Escribir "Primer mayor valor ", mayor1
+	Escribir "Segundo mayor valor ", mayor2
+	Escribir "Primer menor valor ", menor1
+	Escribir "Segundo menor valor ", menor2
+	
+	Escribir "Primer resultado " resultado1
+	Escribir "Segundo resultado" resultado2
+	Escribir "Tercer resultado " resultado3
+	Escribir "Cuarto resultado " resultado4
+	Escribir "Resultado total " resultadototal
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Primer valor
+> 68
+Segundo valor
+> 56
+Tercer valor
+> 78
+Cuarto valor
+> 32
+Primer mayor valor 78
+Segundo mayor valor
+Primer menor valor 32
+Segundo menor valor 56
+Primer resultado -36
+Segundo resultado -12
+Tercer resultado -46
+Cuarto resultado 22
+Resultado total 234
+*** Ejecución Finalizada. ***

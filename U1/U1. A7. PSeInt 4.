@@ -1,0 +1,41 @@
+Algoritmo banco
+	definir edad_prospecto Como Entero
+	definir ingreso Como Entero
+	definir experiencia_laboral Como Entero
+	definir cuestion_medica Como Logico
+	definir saldo Como Entero
+	definir prestamo1 Como logico
+	definir prestamo2 Como real
+	
+	escribir "Ingrese su edad"
+	leer edad_prospecto
+	escribir "Ingrese su Ingreso mensual"
+	leer ingreso
+	escribir "Ingrese los años de su experiencia laboral"
+	leer experiencia_laboral
+	escribir "Ingrese su saldo"
+	leer saldo
+	Escribir "Esto es para una cuestion medica? 1=si 0=no"
+	leer cuestion_medica
+	
+	prestamo1 <- edad_prospecto >= 18 Y ingreso >= 4000 Y experiencia_laboral >= 2 O saldo >= 10000 O cuestion_medica
+	
+	prestamo2 = (ingreso * 0.15) * 12
+	escribir "Tiene derecho a prestamo: ", prestamo1
+	escribir "Prestamo: ", prestamo2
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingrese su edad
+> 30
+Ingrese su Ingreso mensual
+> 8000
+Ingrese los años de su experiencia laboral
+> 5
+Ingrese su saldo
+> 20000
+Esto es para una cuestion medica? 1=si 0=no
+> 0
+Tiene derecho a prestamo: VERDADERO
+Prestamo: 14400
+*** Ejecución Finalizada. ***

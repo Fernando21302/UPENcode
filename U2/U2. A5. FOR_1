@@ -1,0 +1,36 @@
+Algoritmo FOR_1
+	escribir "Nombre del alumno:"
+	leer alumno
+	escribir "cantidad de materias"
+	leer n
+	Para i <- 1 Hasta n Hacer
+		escribir "Ingrese la calificación ", i, ": "
+		leer calificacion
+		suma = suma + calificacion
+	Fin Para
+	
+	promedio = suma / n
+	Si promedio > 6 Entonces
+		total = "El estudiante aprobó."
+	SiNo
+		total= "El estudiante necesitará recursamiento."
+	Fin Si
+	si promedio = 10 Entonces
+		total = "El estudiante es un alumno destacado."
+	FinSi
+	escribir total
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Nombre del alumno:
+> Fer
+cantidad de materias
+> 3
+Ingrese la calificación 1:
+> 10
+Ingrese la calificación 2:
+> 7
+Ingrese la calificación 3:
+> 9
+El estudiante aprobó.
+*** Ejecución Finalizada. ***

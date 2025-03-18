@@ -1,0 +1,63 @@
+Algoritmo A6
+    escribir "Ingresa tu nombre"
+	definir nombre como cadena
+	leer nombre
+	escribir "Ingresa tu edad"
+	Definir edad como entero
+	leer edad 
+	escribir "Ingresa la calificacion de tu examen"
+	definir examen como real
+	leer examen
+	escribir "Ingresa la calificacion de tus tareas"
+	definir tareas Como Real
+	leer tareas
+	escribir "Ingreasa la calificacion de tus trabajos en clase"
+	definir trabajos Como Real
+	leer trabajos
+	
+	definir total como real
+	porcentaje_examen = examen * 0.30
+	porcentaje_tareas = tareas * 0.20
+	porcentaje_trabajos = trabajos * 0.50
+	total = porcentaje_examen + porcentaje_tareas + porcentaje_trabajos
+	Definir aprobo Como cadena
+	Si total >= 6 Entonces
+		Escribir "Nombre: ", nombre
+		Escribir "Edad: ", edad
+		escribir "Valor del examen: ", porcentaje_examen
+		escribir "Valor de las tareas: ", porcentaje_tareas
+		escribir "Valor de los trabajos: ", porcentaje_trabajos
+		escribir "total: ", total
+		aprobo = "Aprobaste" 
+		Escribir aprobo
+	SiNo
+		Escribir "Nombre: ", nombre
+		Escribir "Edad: ", edad
+		escribir "Valor del examen: ", porcentaje_examen
+		escribir "Valor de las tareas: ", porcentaje_tareas
+		escribir "Valor de los trabajos: ", porcentaje_trabajos
+		escribir "total: ", total
+		aprobo = "No Aprobaste" 
+		Escribir aprobo
+	Fin Si
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingresa tu nombre
+> Fer
+Ingresa tu edad
+> 18
+Ingresa la calificacion de tu examen
+> 9
+Ingresa la calificacion de tus tareas
+> 8
+Ingreasa la calificacion de tus trabajos en clase
+> 10
+Nombre: Fer
+Edad: 18
+Valor del examen: 2.7
+Valor de las tareas: 1.6
+Valor de los trabajos: 5
+total: 9.3
+Aprobaste
+*** Ejecución Finalizada. ***

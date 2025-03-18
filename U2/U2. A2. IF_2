@@ -1,0 +1,23 @@
+Algoritmo IF_2
+	Escribir "Ingresa el primer numero"
+	leer n1
+	Escribir "ingresa el segundo numero"
+	leer n2
+	
+	si n1 > n2 Entonces
+		Escribir n1 " es el mayor"
+		Escribir n2 " es el menor"
+	SiNo
+		Escribir n2 " es el mayor"
+		Escribir n1 " es el menor"
+	FinSi
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingresa el primer numero
+> 7
+ingresa el segundo numero
+> 4
+7 es el mayor
+4 es el menor
+*** Ejecución Finalizada. **

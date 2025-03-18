@@ -1,0 +1,62 @@
+Algoritmo WHILE_2
+	Escribir "Ingresa la contraseña"
+	leer key
+	Mientras key <> "19850625" Hacer
+		Escribir "Contraseña incorrecta"
+		Escribir "Ingresa la contraseña"
+		leer key
+	FinMientras
+	Escribir "Quieres hacer registros de zanahorias o tomates?"
+	leer registro
+	Si registro = "zanahorias" o registro = "zanahoria" Entonces
+		mensaje = "zanahorias"
+		Escribir "Cuantas cajas se ingresaran?"
+		Leer n
+		Para i = 1 hasta n Hacer
+			Escribir "Ingrese el valor de la caja ", i, ":"
+			leer v
+			peso = peso + v
+		FinPara
+		total = peso * 15.84
+	SiNo si registro = "tomates" o registro = "zanahoria" Entonces
+			mensaje = "tomates"
+			Escribir "Cuantas cajas se ingresaran? (escribe 100001 para terminar el registro)"
+			leer n
+			Mientras n <> 100001 Hacer
+				Escribir "Cuantas cajas se ingresaran? (escribe 100001 para terminar el registro)"
+				leer n
+				peso = peso + n
+			FinMientras
+			total = peso * 11.34
+		FinSi
+	Fin Si
+	si total > 10000 Entonces
+		descuento = total * 0.075
+		total = total - descuento
+	FinSi
+	Escribir "Necesitas envío?"
+	Leer envio
+	si envio = "si" o envio = "Si" Entonces
+		total = total + 150
+	FinSi
+	
+	Escribir "Se eligió: ", mensaje
+	Escribir "El peso fue: ", peso, "Kg"
+	Escribir "El total fue: ", total
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingresa la contraseña
+> 19850625
+Quieres hacer registros de zanahorias o tomates?
+> zanahoria
+Cuantas cajas se ingresaran?
+> 1
+Ingrese el valor de la caja 1:
+> 1000
+Necesitas envío?
+> no
+Se eligió: zanahorias
+El peso fue: 1000Kg
+El total fue: 14652
+*** Ejecución Finalizada. ***

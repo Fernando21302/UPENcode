@@ -1,0 +1,19 @@
+Algoritmo figura
+	escribir "Dame el radio"
+	leer radio
+	escribir "Dame la Hipotenusa"
+	leer hipotenusa
+	
+	area_circulo =  3.1416 * (radio * radio)  / 4
+	radio2 = radio / 2
+	area_circulo2 = (3.1416 * (radio2 * radio2)) / 2
+	altura = (hipotenusa * hipotenusa) - (radio * radio)
+	altura = raiz(altura)
+	area_triangulo = (2*radio * altura) / 2
+	
+	area <- area_circulo + area_triangulo - area_circulo2
+	
+	Escribir "El area es ", area
+	
+	
+FinAlgoritmo

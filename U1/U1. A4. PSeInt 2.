@@ -17,3 +17,11 @@ Algoritmo figura
 	
 	
 FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Dame el radio
+> 235
+Dame la Hipotenusa
+> 325
+El area es 74444.2266535126
+*** Ejecución Finalizada. **

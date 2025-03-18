@@ -1,0 +1,33 @@
+Algoritmo WHILE_1
+	Mientras c <> "AcM482" Hacer
+		Escribir "Ingrese la contraseña"
+		leer c
+		si c <> "AcM482" Entonces
+			Escribir "se debe llamar al supervisor"
+		FinSi
+	Fin Mientras
+	Escribir "Bienvenido"
+	Escribir "Inserte la cantidad de piezas (0000 para terminar)"
+	leer p
+	Mientras p <> 0000 Hacer
+		Escribir "Inserte la cantidad de piezas (0000 para terminar)"
+		leer p
+		t = p + t
+	FinMientras
+	si t > 10000 Entonces
+		Escribir "Se ha cumplido la meta"
+	SiNo
+		Escribir "¡Alerta! no se ha cumplido la meta"
+	FinSi
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingrese la contraseña
+> AcM482
+Bienvenido
+Inserte la cantidad de piezas (0000 para terminar)
+> 2000
+Inserte la cantidad de piezas (0000 para terminar)
+> 0000
+¡Alerta! no se ha cumplido la meta
+*** Ejecución Finalizada. ***

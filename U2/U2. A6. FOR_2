@@ -1,0 +1,55 @@
+Algoritmo FOR_2
+	Escribir 'Cuantos vendedores se van a registrar?'
+	Leer n
+	Para i<-1 Hasta n Hacer
+		Escribir 'Cuantas ventas realizó el vendedor ',i,'?'
+		Leer v
+		Para j<-1 Hasta v Hacer
+			Escribir 'Cantidad de la venta ',j,': '
+			Leer cantidad
+			ventatotal1 <- ventatotal1+cantidad
+		FinPara
+		Si cantidad>ventaalta Entonces
+			ventaalta <- cantidad
+		FinSi
+		ventatotal2 <- ventatotal2+ventatotal1
+	FinPara
+	Si ventaalta>100 O ventatotal2>1500 Entonces
+		Si ventatotal2 > 20000 Entonces
+			mensaje <- 'Se alcanzó la meta'
+		SiNo
+			mensaje <- 'Habrá que convocar una reunión'
+		FinSi
+	SiNo
+		mensaje <- 'Pase a Recursos Humanos'
+	FinSi
+	Escribir n,' vendedores se registraron'
+	Escribir 'El total fue ',ventatotal2
+	Escribir mensaje
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Cuantos vendedores se van a registrar?
+> 3
+Cuantas ventas realizó el vendedor 1?
+> 2
+Cantidad de la venta 1:
+> 1000
+Cantidad de la venta 2:
+> 2000
+Cuantas ventas realizó el vendedor 2?
+> 1
+Cantidad de la venta 1:
+> 6000
+Cuantas ventas realizó el vendedor 3?
+> 3
+Cantidad de la venta 1:
+> 1000
+Cantidad de la venta 2:
+> 2000
+Cantidad de la venta 3:
+> 3000
+3 vendedores se registraron
+El total fue 27000
+Se alcanzó la meta
+*** Ejecución Finalizada. ***

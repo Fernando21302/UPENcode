@@ -1,4 +1,4 @@
-Algoritmo WHILE_2
+Algoritmo Conteó
 	Escribir "Ingresa la contraseña"
 	leer key
 	Mientras key <> "19850625" Hacer

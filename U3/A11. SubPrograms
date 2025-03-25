@@ -1,0 +1,62 @@
+SubProceso VolumenYArea_cubo()
+	c = 0
+	l = 0
+	Escribir "Dame las caras del cubo"
+	leer c
+	Escribir "Dame los lados del cubo"
+	leer l
+	area_cubo= c * 6
+	volumen_cubo= l * l * l
+	Escribir "Area: ", area_cubo, " Volumen: ", volumen_cubo
+FinSubProceso
+
+SubProceso VolumenYArea_piramide()
+	b = 0
+	h = 0
+	ab = 0
+	Escribir "Dame la base"
+	leer b
+	Escribir "Dame la altura"
+	leer h
+	Escribir "Dame el area de la base"
+	leer ab
+	area_piramide = 1/2 * (b * h)
+	volumen_piramide = (1/3) * ab * h
+	Escribir "Area: ", area_piramide, " Volumen: ", volumen_piramide
+FinSubProceso
+
+SubAlgoritmo VolumenYArea_prisma()
+	b = 0
+	h = 0
+	a = 0
+	p = 0
+	Escribir "Dame la base"
+	leer b
+	Escribir "Dame la altura"
+	leer h
+	Escribir "Dame el area"
+	leer a
+	Escribir "Dame el perimetro"
+	area_prisma = a * (p * h) + b
+	volumen_prisma = b * h
+	Escribir "Area: ", area_prisma, " Volumen: ", volumen_prisma
+FinSubAlgoritmo
+Algoritmo SubPrograms
+	Escribir "Inserte cualquier numero para iniciar, inserte 0000 para finalizar"
+	leer continuar
+	Mientras continuar <> 0000
+		Escribir "Que figura quieres calcular? Cubo (1) Priamide (2) Prisma (3)"
+		leer respuesta
+		si respuesta = 1 Entonces
+			VolumenYArea_cubo
+		sino si respuesta = 2 Entonces
+				VolumenYArea_piramide
+			sino si respuesta = 3 Entonces
+					VolumenYArea_prisma
+			finsi
+			FinSi
+			finsi
+		Escribir "Continuar? 0000 para No"
+		leer continuar
+	FinMientras
+FinAlgoritmo

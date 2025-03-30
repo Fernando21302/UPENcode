@@ -7,7 +7,7 @@ Cuatrimestre 1<br/><br/>
 Universidad Politecnica del Estado de Nayarit<br/><br/>
 En esta materia aprendimos sobre los fundamentos basicos de la programación con PSInt y algo de Python.<br/><br/>
 Unidad 1<br/><br/>
-Aqui aprendimos los codigos mas basicos como las simples operaciones matematicas.<br/><br/>
+Aqui aprendimos los codigos mas basicos como las operaciones matematicas.<br/><br/>
 [Ir a Unidad 1](https://github.com/Fernando21302/UPENcode/tree/main/U1)<br/><br/>
 Unidad 2<br/><br/>
 Aqui aprendimos otros codigos como IF ELSE, FOR, WHILE y DO WHILE.<br/><br/>

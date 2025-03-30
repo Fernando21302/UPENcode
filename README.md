@@ -1,7 +1,7 @@
 # UPENcode
 ![Portada](https://www.itmastersmag.com/wp-content/uploads/2021/01/shutterstock_1078387013-scaled.jpg)<br/>
 FUNDAMENTOS DE PROGRAMACIÓN<br/><br/>
-Fernando Josué Plantillas Jiménez<br/><br7>
+Fernando Josué Plantillas Jiménez<br/><br/>
 ITIID<br/><br/>
 Cuatrimestre 1<br/><br/>
 Universidad Politecnica del Estado de Nayatir<br/><br/>
